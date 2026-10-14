@@ -1,35 +1,76 @@
-:root {
-  --text: #272231;
-  --text-h: #08060d;
-  --bg: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
 
-  --border: #e5e4e7;
+:root {
+  --main-dark: #272231;
+  --beige: #FFF8EF;
+  --lilac: #DCCDF5;
+  --salmon: #FF8276;
+  --green: #BFE8D4;
+  --white: #FFFFFF;
+  --yellow: #FFE69A;
+
+  --text: var(--main-dark);
+  --sans: Roboto, system-ui, sans-serif;
+
+  --title-sans: "Old Standard TT", sans-serif;
+  --title-border: #fff;
+
+  --secondary-title-sans: 'Modak', sans-serif;
+
+  --bg: var(--beige);
+  --shadow: 0 .25rem .01rem rgba(39, 34, 49, .25);
+  /*TODO: may be needed idk, we'll see later*/
+  /*
+  --text-h: #08060d;
+
   --code-bg: #f4f3ec;
   --accent: #aa3bff;
   --accent-bg: rgba(170, 59, 255, 0.1);
   --accent-border: rgba(170, 59, 255, 0.5);
   --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
+  */
 
 
 
 
-  font: 18px/145% var(--sans);
-  letter-spacing: 0.18px;
   color: var(--text);
+
   background: var(--bg);
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 
   @media (max-width: 1024px) {
     font-size: 16px;
   }
 }
 
+h1{
+  font-family: var(--title-sans), sans-serif;
+}
+h2{
+  font-family: var(--secondary-title-sans), sans-serif;
+}
+.dev{
+  width: fit-content;
+  margin: 0 auto;
+  box-shadow: var(--shadow);
+}
+button{
+  background-color: var(--main-dark);
+  color: var(--white);
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  border: none;
+
+  box-shadow: var(--shadow);
+
+}
