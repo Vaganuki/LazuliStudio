@@ -4,6 +4,8 @@
   --main-dark: #272231;
   --beige: #FFF8EF;
   --lilac: #DCCDF5;
+  --purple: #6D4A75;
+  --mole: #6D6572;
   --salmon: #FF8276;
   --green: #BFE8D4;
   --white: #FFFFFF;
@@ -19,6 +21,7 @@
 
   --bg: var(--beige);
   --shadow: 0 .25rem .01rem rgba(39, 34, 49, .25);
+  --shadow-diffused: 0 .25rem .25rem rgba(39, 34, 49, .25);
   /*TODO: may be needed idk, we'll see later*/
   /*
   --text-h: #08060d;
@@ -52,11 +55,19 @@
   }
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--sans) , sans-serif;
+}
+
 h1{
   font-family: var(--title-sans), sans-serif;
 }
 h2{
   font-family: var(--secondary-title-sans), sans-serif;
+  font-size: 3rem;
 }
 .dev{
   width: fit-content;
@@ -73,4 +84,13 @@ button{
 
   box-shadow: var(--shadow);
 
+}
+
+.cartouche{
+  border-radius: 4em;
+  color: var(--white);
+  background-color: var(--main-dark);
+  padding: .5rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
 }

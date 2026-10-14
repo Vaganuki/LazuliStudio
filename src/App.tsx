@@ -1,12 +1,13 @@
 import './App.css'
+import {HotOffers} from "./components/hot_offers/HotOffers.tsx";
 
 function App() {
 
   return (
     <>
       <h1>Lazuly Studio</h1>
-      <h2>Pack OFFRE</h2>
       <button>Bouton ↗</button>
+      <HotOffers/>
     </>
   )
 }

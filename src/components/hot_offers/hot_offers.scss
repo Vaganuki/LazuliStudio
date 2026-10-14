@@ -1,0 +1,95 @@
+.offers-section {
+
+  background-color: var(--lilac);
+
+  padding: 1rem 2.5rem;
+
+  h2{
+    color: var(--beige);
+  }
+
+  .offers-container {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+
+    .offer{
+
+      &__wrapper{
+        padding: 1rem;
+        background-color: var(--white);
+        border-radius: 1rem;
+        box-shadow: var(--shadow-diffused);
+        width: 20vw;
+        display: flex;
+        flex-direction: column;
+        gap: .75rem;
+      }
+
+      &__pic{
+        aspect-ratio: 16/9;
+        overflow: hidden;
+        border-radius: 1rem;
+
+        img{
+          object-fit: cover;
+          width: 100%;
+        }
+      }
+
+      &__category{
+        width: fit-content;
+        font-size: .75rem;
+      }
+
+      &__header{
+        display: flex;
+        justify-content: space-between;
+
+        h3{
+          font-family: var(--secondary-title-sans), sans-serif;
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+        }
+      }
+      &__price{
+        color: var(--purple);
+      }
+      &__desc{
+        font-size: 0.75rem;
+        color: var(--mole);
+      }
+      &__timing{
+        font-size: 0.6rem;
+        font-weight: bold;
+      }
+    }
+  }
+  .offers-contact{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    background-color: var(--salmon);
+
+    color: var(--white);
+
+    &__text{
+      font-weight: bold;
+    }
+
+    &__button{
+      width: fit-content;
+      padding: .75rem 1.5rem;
+      background-color: var(--lilac);
+      color: var(--main-dark);
+    }
+  }
+}
