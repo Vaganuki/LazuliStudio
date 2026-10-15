@@ -2,7 +2,7 @@ import './hot_offers.scss';
 
 interface Offers {
     category: string;
-    color:'lilac'|'beige' | 'salmon' | 'green' | 'white' | 'yellow';
+    color: 'lilac' | 'beige' | 'salmon' | 'green' | 'white' | 'yellow';
     name: string;
     price: number;
     description: string;
@@ -58,7 +58,7 @@ export function HotOffers() {
                 ))}
             </div>
             <div className="offers-contact">
-                <p className="offers-contact__text">Envie d’un projet que tu ne trouves pas dans mes offres ? Pas de
+                <p className="offers-contact__text">Envie d’un projet que tu ne trouves pas dans mes offres ? <br/> Pas de
                     panique, discutons de tes envies !</p>
                 <button className="offers-contact__button">Contacte moi</button>
             </div>
