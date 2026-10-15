@@ -1,0 +1,28 @@
+.nav-bar {
+  height: 7rem;
+  padding: .75rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background-color: var(--beige);
+}
+.nav{
+  &__menu{
+    display: flex;
+    gap: 1rem;
+  }
+  &__item{
+    a{
+      color: inherit;
+      &:hover{
+        color: var(--green);
+      }
+    }
+  }
+}
