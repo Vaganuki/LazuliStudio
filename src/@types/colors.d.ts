@@ -1,0 +1,1 @@
+export type AssetColor = 'lilac' | 'beige' | 'salmon' | 'green' | 'white' | 'yellow';

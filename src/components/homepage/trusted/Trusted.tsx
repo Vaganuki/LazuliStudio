@@ -1,11 +1,12 @@
 import './trusted.scss'
+import type {AssetColor} from "../../../@types/colors";
 
 interface TrustedItem {
     category: string;
     title: string;
     description: string;
-    mainColor:  'lilac' | 'beige' | 'salmon' | 'green' | 'white' | 'yellow';
-    secondaryColor:  'lilac' | 'beige' | 'salmon' | 'green' | 'white' | 'yellow';
+    mainColor:  AssetColor;
+    secondaryColor:  AssetColor;
 }
 
 export function Trusted() {

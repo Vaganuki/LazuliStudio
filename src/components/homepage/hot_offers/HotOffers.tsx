@@ -1,8 +1,9 @@
 import './hot_offers.scss';
+import type {AssetColor} from "../../../@types/colors";
 
 interface Offers {
     category: string;
-    color: 'lilac' | 'beige' | 'salmon' | 'green' | 'white' | 'yellow';
+    color: AssetColor;
     name: string;
     price: number;
     description: string;
