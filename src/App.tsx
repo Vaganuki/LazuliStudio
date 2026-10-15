@@ -1,18 +1,14 @@
 import './App.css'
-import {HotOffers} from "./components/hot_offers/HotOffers.tsx";
-import {Footer} from "./components/footer/Footer.tsx";
-import {Trusted} from "./components/trusted/Trusted.tsx";
-import {Hero} from "./components/hero/Hero.tsx";
-import {NavBar} from "./components/nav-bar/NavBar.tsx";
+import {Footer} from "./components/core/footer/Footer.tsx";
+import {NavBar} from "./components/core/nav-bar/NavBar.tsx";
+import {Homepage} from "./components/homepage/Homepage.tsx";
 
 function App() {
 
     return (
         <>
             <NavBar/>
-            <Hero/>
-            <HotOffers/>
-            <Trusted/>
+            <Homepage/>
             <Footer/>
         </>
     )
