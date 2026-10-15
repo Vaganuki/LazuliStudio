@@ -86,6 +86,14 @@ button{
 
 }
 
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
 .cartouche{
   border-radius: 4em;
   color: var(--white);
